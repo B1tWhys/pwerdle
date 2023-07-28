@@ -12,7 +12,7 @@ from typing_extensions import Annotated
 
 def main(
     csv_path: Path = typer.Option(help="Path to the CSV file", default='./electricity-prod-source-stacked.csv'),
-    json_path: Path = typer.Option(help="Path to write json to", default='../src/country_data.json'),
+    json_path: Path = typer.Option(help="Path to write json to", default='../src/lib/country_data.json'),
 ):
     json_path.parent.mkdir(exist_ok=True, parents=True)
 
