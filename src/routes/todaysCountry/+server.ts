@@ -6,7 +6,7 @@ import { json } from '@sveltejs/kit';
 
 export const GET = (() => {
 	const today = new Date();
-	const daysSinceEpoch = Math.floor(today.getTime() / (60 * 60 * 24));
+	const daysSinceEpoch = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
 	const seed = String(daysSinceEpoch);
 	console.debug(`Seeing rng with: ${seed}`);
 
